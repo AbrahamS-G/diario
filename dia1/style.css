@@ -1,0 +1,72 @@
+/* ABRAHAM SALAZAR GARRIDO PROYECTO "TIENDA SALAZAR" */
+body{
+    font-family: monospace;
+    font-size: 20px;
+    background-color: rgb(136, 123, 89);
+    cursor: default;
+    color: rgb(219, 201, 201);
+}
+.container,.container2{
+    background-color: rgb(155, 135, 86);
+    padding: 10px;
+    width: 33%;
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-left: 2px solid rgb(77, 182, 121);
+}
+.container{
+    border-radius: 40px 40px 0 0;
+}
+input[type="text"]{
+    padding: 5px;
+    font-size: 15px;
+    width: 110px;
+}
+
+.container label{
+    width: 300px;
+    padding: 10px;
+}
+table{
+    margin: auto;
+}
+td,th{
+    width: 140px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(109, 74, 74);
+}
+.container button{
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: rgb(135, 196, 154);
+}
+.container2{
+    margin-top: 10px;
+    border-radius:  0 0 40px 40px;
+    height: 240px;
+}
+.container2 button{
+    width: 120px;
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(150, 185, 161);
+    border-radius: 35px;
+    cursor: pointer;
+}
+button:hover{
+    transition: all 0.5s;
+    transform: scale(1.08);
+    color: brown;
+    background-color: rgb(126, 161, 137);
+}
+button:active{
+    background-color: rgb(98, 126, 106);
+
+}
