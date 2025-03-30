@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #68101c, #702139);
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    cursor: default;
+}
+#perfil {
+    border-radius: 50%;
+    min-width: 100px;
+    max-width: 250px;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.left {
+    background: linear-gradient(to bottom, #4e0a13, #4d071c);
+    min-width: 350px;
+    max-width: 20%;
+    height: 75vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(116, 110, 110, 0.3);
+    text-align: center;
+    color: white;
+    animation: fadeInUp 1s ease-out forwards;
+
+}
+.name {
+    margin-top: 10px;
+}
+a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    transform: scale(1.05);
+}
+.red:hover{
+    transform: scale(1.05);
+
+}
+.main-container{
+    width: 95%;
+}
+
+.descarga{
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, #68101c, #ca2959);
+
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    border-radius: 10px;
+    align-items: end;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.descarga:hover{
+    transition: all 0.5s;
+    background: linear-gradient(to right, #ca2959, #68101c);
+    transform: scale(1.05);
+}
+.descarga:active{
+    background: linear-gradient(to top, #ca2959, #68101c);
+    transform: scale(1);
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+.left a img{
+    padding: 10px;
+    margin-top: -5px;
+}
+header nav ul{
+    display: flex;
+    margin-top: 0px;
+    animation: EntrarDesdeDer 1s ease;
+
+}
+header nav ul li{
+    flex-grow: 1;
+    list-style: none;
+    text-align: center;
+    background: #68101c;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+}
+#inicio{
+    border-radius: 15px 0 0 15px;
+    background-color: #68101c;
+}
+#galeria{
+    border-radius: 0 15px 15px 0;
+}
+header nav ul li a{
+    display: block;
+}
+header{
+    width: 77%;
+    float: inline-end;
+    margin-right: 2%;
+}
+article{
+    color: white;
+    width: 74.7%;
+    float: inline-end;
+    height: 80vh;
+    margin-right: 2%;
+    border-radius: 20px;
+    background-color: #e8cfe910;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: EntrarDesdeDer 1s ease;
+}
+@keyframes EntrarDesdeDer {
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.text-article{
+    padding: 15px;
+    text-align: justify;
+    width: 72%;
+}
+.text-article p{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    font: 1000;
+}
+.text-article h3,.text-article h1{
+    font-size: 25px;
+}
+#myproyects,#contact,#galery,#horario{
+    display: none;
+}
+.right-up{
+    display: flex;
+    flex-direction: column;
+    float: inline-end;
+    width: 23%;
+    height: 50%;
+    border-radius: 0 20px 0 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.226);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.226);
+    
+    background-color: #ffffff0e;
+}
+.right-up h2,.right-up p{
+    padding: 10px;
+    line-height: 25px;
+}
+.right-up p{
+    font-size: 17px;
+}
+.right-up i{
+    margin-top: -15px;
+    margin-left: 50%;
+    margin-bottom: -20px;
+}
+.hobbies{
+    width: 100%;
+    display: flex;
+}
+.hobbies-items{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(to bottom, #4e0a13, #53071e);
+    
+    border: 1px solid rgba(119, 89, 89, 0.219);
+    border-radius: 20px;
+    flex-grow: 1;
+
+    animation: fadeInUp 2s ease-out forwards;
+}
+.hobbies-items:hover{
+    background: linear-gradient(to top, #4e0a13, #53071e);
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hobbies img{
+    filter: invert(100%);
+    padding: 10px;
+    width: 48px;
+}
+.skills{
+    margin-top: -2%;
+}
+
+#myproyects h1{
+    font-size: 40px;
+    text-align: center;
+}
+.proyectos-article{
+    width: 98%;
+}
+.proyectos-article table{
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+}
+.proyectos-article table tr td{
+    min-width: 200px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.horario{
+    min-width: 350px;
+    max-width: 20%;
+    margin: 35px;
+    box-shadow: 10px 10px 20px rgba(70, 6, 6, 0.3);
+}
+footer {
+    background-color: #702139;
+    color: #fff;
+    text-align: center;
+    padding: 1.1em 0;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    height: 50px; /* Ajusta según tu necesidad */
+}
