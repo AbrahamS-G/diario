@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ABRAHAM</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio" >
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Snapchat-1845305497.jpg" alt="">
+            </div>
+            <h1>ABRAHAM S.G.</h1>
+            <h2>Ingeniero de software - backend</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/abr.ctm/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/abraham_ctm"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/abraham_ctm/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+5215574695720"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.threads.net/@abraham_ctm"><i class="fa-brands fa-threads"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Abraham Salazar.</span> , un apasionado al mundo del desarrollo de software 
+                con una fascinación por la creatividad y la tecnología. <p> mi enfoque se centra 
+                en crear programas o aplicaciones tanto web como de escritorio.</p></p>
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            09-10-2007
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +52 55 7469 5720
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            asgmeme123@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.google.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Ciudad De México, México
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>CICLISMO</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-school"></i>
+                            <span>ESTUDIAR</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>EJERCICIO</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>COMER</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV<i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    
+    <!--SECCION  SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profesional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Programación y Creatividad</h4>
+                        <span class="casa">Ciudad De México</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p>Nací y crecí en la Ciudad de México, donde he desarrollado mi pasión por la programación desde 2017. 
+                            A lo largo de los años, he tenido la oportunidad de participar en diversos concursos y proyectos de programación, explorando mi creatividad y contribuyendo al vibrante mundo.
+                        Durante este tiempo, he adquirido habilidades significativas en áreas como desarrollando paginas web, programas de escritorio y mas cosas.
+                        Mi enfoque se ha centrado en estudiar el lenguaje de comunicación hacía las computadoras.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación y Creatividad</h4>
+                        <span class="casa">Ciudad De México</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p>Nací y crecí en la Ciudad de México, donde he desarrollado mi pasión por la programación desde 2017. 
+                            A lo largo de los años, he tenido la oportunidad de participar en diversos concursos y proyectos de programación, explorando mi creatividad y contribuyendo al vibrante mundo.
+                        Durante este tiempo, he adquirido habilidades significativas en áreas como desarrollando paginas web, programas de escritorio y mas cosas.
+                        Mi enfoque se ha centrado en estudiar el lenguaje de comunicación hacía las computadoras.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación y Creatividad</h4>
+                        <span class="casa">Ciudad De México</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p>Nací y crecí en la Ciudad de México, donde he desarrollado mi pasión por la programación desde 2017. 
+                            A lo largo de los años, he tenido la oportunidad de participar en diversos concursos y proyectos de programación, explorando mi creatividad y contribuyendo al vibrante mundo.
+                        Durante este tiempo, he adquirido habilidades significativas en áreas como desarrollando paginas web, programas de escritorio y mas cosas.
+                        Mi enfoque se ha centrado en estudiar el lenguaje de comunicación hacía las computadoras.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Back Developer</h4>
+                        <span class="casa">Nombre de compañía</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p>Nací y crecí en la Ciudad de México, donde he desarrollado mi pasión por la programación desde 2017. 
+                            A lo largo de los años, he tenido la oportunidad de participar en diversos concursos y proyectos de programación, explorando mi creatividad y contribuyendo al vibrante mundo.
+                        Durante este tiempo, he adquirido habilidades significativas en áreas como desarrollando paginas web, programas de escritorio y mas cosas.
+                        Mi enfoque se ha centrado en estudiar el lenguaje de comunicación hacía las computadoras.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item der">
+                        <h4>Back Developer</h4>
+                        <span class="casa">Nombre de compañía</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p>Nací y crecí en la Ciudad de México, donde he desarrollado mi pasión por la programación desde 2017. 
+                            A lo largo de los años, he tenido la oportunidad de participar en diversos concursos y proyectos de programación, explorando mi creatividad y contribuyendo al vibrante mundo.
+                        Durante este tiempo, he adquirido habilidades significativas en áreas como desarrollando paginas web, programas de escritorio y mas cosas.
+                        Mi enfoque se ha centrado en estudiar el lenguaje de comunicación hacía las computadoras.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item der">
+                        <h4>Back Developer</h4>
+                        <span class="casa">Nombre de compañía</span>
+                        <span class="fecha">2017 - 2024</span>
+                        <p>Nací y crecí en la Ciudad de México, donde he desarrollado mi pasión por la programación desde 2017. 
+                            A lo largo de los años, he tenido la oportunidad de participar en diversos concursos y proyectos de programación, explorando mi creatividad y contribuyendo al vibrante mundo.
+                        Durante este tiempo, he adquirido habilidades significativas en áreas como desarrollando paginas web, programas de escritorio y mas cosas.
+                        Mi enfoque se ha centrado en estudiar el lenguaje de comunicación hacía las computadoras.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número de telefono">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                México CDMX
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: +525574695720
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: asgmeme123@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    <div class="redes">
+        <a href="https://www.facebook.com/abr.ctm/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/abraham_ctm"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/abraham_ctm/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/+5215574695720"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.threads.net/@abraham_ctm"><i class="fa-brands fa-threads"></i></a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
