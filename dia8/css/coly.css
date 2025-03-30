@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 -25px 100px rgba(0, 0, 0, 0.2);
+}
+article:hover{
+    background-color:  rgba(0, 0, 0, 0.2);
+
+}
+h1 {
+    color: #da3c3c; 
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #f54545;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+ul li {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+i{
+    background-color: rgb(36, 12, 12,0.6);
+}
+p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.trm{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    background-color: #f08080;
+}
+#cupon{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}

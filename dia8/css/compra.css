@@ -1,0 +1,78 @@
+body{
+    text-align: center;
+}
+form{
+    margin: auto;
+    margin-bottom: 20%;
+    color: white;
+    background-color: rgb(70, 150, 150,0.1);
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 2px 20px 20px 2px;
+    border-left: 5px solid black;
+    border-bottom: 3px solid black;
+}
+form:hover{
+    transition: all 0.2s;
+    transform: scale(1.01);
+    background-color: rgba(33, 58, 58, 0.4);
+}
+label{
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    font-family: monospace;
+}
+.titulocompra{
+    font-size: 30px;
+    text-decoration:double;
+}
+input{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 23px;
+    width: 60%;
+    
+}
+input::placeholder{
+    width: 100%;
+    padding: 3px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+button{
+    width: 250px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(43, 197, 133);
+    color: white;
+}
+input:hover{
+    transition: all 0.2s;
+    transform: scale(1.02);
+}
+button:hover{
+    transition: all 0.2s;
+    transform: scale(1.03);
+}
+button:active{
+    transform: scale(0.95);
+    background-color: rgb(48, 179, 124);
+}
+#err{
+    
+    border-radius: 2px 20px 0 0;
+    height: 5vh;
+    font-size: 30px;
+    background-color: rgb(37, 30, 30);
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+}

@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    position: relative;
+    background-color: rgba(92, 59, 59, 0.5);
+    width: 550px;
+    text-align: center;
+    margin: 0 10px 40px 10px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 40px;
+    padding: 10px;
+    margin-right: 20px;
+    height: 820px;
+    box-sizing: border-box;
+}
+.espacio li{
+    margin-top: 12px;
+}
+
+article:hover {
+    transition: all 0.5s;
+    transform: scale(1.020);
+    background-color: rgba(37, 38, 90, 0.5);
+}
+
+article h1 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+article p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding: 20px;
+}
+
+.caracteristicas {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.caracteristicas p {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.caracteristicas ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.caracteristicas li {
+    margin-bottom: 5px;
+}
+
+.caracteristicas li:first-child {
+    font-weight: bold;
+}
+
+main:last-of-type {
+    margin-top: 20px;
+    text-align: center;
+}
+
+main:last-of-type h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main:last-of-type p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+footer h4 {
+    margin-top: 0;
+}
+
+footer i {
+    font-style: italic;
+}
+
+footer .red {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+button{
+    margin-left: 40%;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+}
+article button {
+    margin: 0 auto;
+}
