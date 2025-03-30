@@ -1,0 +1,87 @@
+<!-- ABRAHAM SALAZAR GARRIDO PROYECTO "TIENDA SALAZAR" -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Abraham" content="Salazar Garrido">
+        <title>Tienda Salazar</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<div class="no-opt">
+    Esta pagina solo está <br> optimizada para computadora <br>
+    <a href="../">Volver</a>
+</div>
+<body>
+    <header>
+        <h2>Tienda Salazar</h2>
+    </header>
+    <main>
+        <div class="container">
+
+            <table>
+                <tr>
+                    <td><label for="codigo">CODIGO:</label></td>
+                    <td><input type="text" id="codigo"></td>
+                </tr>
+                <tr>
+                    <td><label for="producto">PRODUCTO:</label></td>
+                    <td><input type="text" id="producto" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="precio">PRECIO:</label></td>
+                    <td><input type="text" id="precio" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="iva">IVA:</label></td>
+                    <td><input type="text" id="iva" disabled></td>
+                </tr>
+                <tr>
+                    <th><label for="total">TOTAL:</label></th>
+                    <td><input type="text" id="total" disabled></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" value="Checar" onclick="consultar()">Consultar</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container2">
+            <table>
+                <tr>
+                    <th>CODIGO</th>
+                    <th>PROUCTO</th>
+                    <th>PRECIO</th>
+                </tr>
+                <tr>
+                    <td><strong id="resultado1"> id</strong></td>
+                    <td><b id="resultado2"> producto</b></td>
+                    <td id="resultado3"> precio</td>
+                </tr>
+                <tr>
+                    <td><strong id="resultado21"> id</strong></td>
+                    <td><b id="resultado22"> producto</b></td>
+                    <td id="resultado23"> precio</td>
+                </tr>
+                <tr>
+                    <td><strong id="resultado31"> id</strong></td>
+                    <td><b id="resultado32"> producto</b></td>
+                    <td id="resultado33"> precio</td>
+                </tr>
+                <tr>
+                    <td><strong id="resultado41"> id</strong></td>
+                    <td><b id="resultado42"> producto</b></td>
+                    <td id="resultado43"> precio</td>
+                </tr>
+            </table>
+            <button type="button" onclick="beb()">Bebidas</button>
+            <button type="button" onclick="bot()">Botanas</button>
+            <button type="button" onclick="aba()">Abarrotes</button>
+            <button type="button" onclick="gol()">Dulces</button>
+            <button type="button" onclick="crem()">Cremeria</button>
+            <br>
+            <a href="../">Volver</a>
+        </div>
+    </main>
+</body>
+</html>
