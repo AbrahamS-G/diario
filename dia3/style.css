@@ -1,0 +1,47 @@
+.slider{
+    background-color: rgb(155, 154, 154);
+    width: 95%;
+        margin: auto;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 800%;
+    animation: cambio 14s infinite alternate;
+    animation-timing-function: linear;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    10%{margin-left: 0;}
+    14.2%{margin-left: -100%;}
+    23%{margin-left: -100%;}
+    28.5%{margin-left: -200%;}
+    37%{margin-left: -200%;}
+    42.7%{margin-left: -300%;}
+    50%{margin-left: -300%;}
+    56.9%{margin-left: -400%;}
+    65%{margin-left: -400%;}
+    71.1%{margin-left: -500%;}
+    80%{margin-left: -500%;}
+    85.3%{margin-left: -600%;}
+    90%{margin-left: -600%;}
+    95%{margin-left: -600%;}
+    100%{margin-left: -600%;}
+}
+a{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
