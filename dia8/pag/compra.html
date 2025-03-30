@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina De Compras</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/compra.css">
+    <script src="../css/main.js"></script>
+</head>
+<div class="no-opt">
+    Esta pagina solo está <br> optimizada para computadora <br>
+    <a href="../../">Volver</a>
+</div>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <strong>Productos</strong>
+                <br>
+                <li><a class="menulinks" href="index.html">Inicio</a></li>
+                <li><a class="menulinks" href="pc.html">Pc de Escritorio</a></li>
+                <li><a class="menulinks" href="laptop.html">Portatil</a></li>
+                <li><a class="menulinks" href="tel.html">Telefonos</a></li>
+                <li><a class="menulinks" href="login.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br><br><br><br>
+        <form id="formulario">
+            <p id="err"></p>
+            <label class="titulocompra">Compra</label>
+            <br>
+            <label for="nominput" class="nombre">Nombre / Nombres:</label><br>
+            <input type="text" required id="nominput" placeholder="Nombre" maxlength="21">
+            <br>
+            <label for="apeinput" class="apellido">Apellido Paterno:</label><br>
+            <input type="text" required id="apeinput" placeholder="Apellido" maxlength="10">
+            <br>
+            <label for="numinput" class="numero">Numero De Celular:</label><br>
+            <input type="tel" required id="numinput" placeholder="10 Digitos" maxlength="10">
+            <br>
+            <label for="emainput" class="correo">Correo:</label><br>
+            <input type="email" required id="emainput" placeholder="Correo">
+            <br>
+            <label for="codigo">Codigo Postal <i>(C.P.)</i>:</label>
+            <input type="text" required id="codigo" maxlength="5" placeholder="CP: 00000">
+            <br>
+            <label for="cupon">Ingresa un cupon de descuento</label>
+            <input type="text" required id="cupon" maxlength="10" placeholder="cupon" value="#">
+            <button type="button" onclick="buy()">Comprar</button>
+        </form>
+    </main>
+    <footer>
+        <h4>Editorial e informacion relacionada.</h4>
+        <p>este contenido esta conformado por los diferentes conocimintos de los siguintes creadores dela pagina:</p>
+        <h5>-contacto-</h5>
+        <li>Conoce mas sobre los colaboradores principales de este proyecto -><a class="link" href="colyterm.html">Pulsa Aquí</a></li>
+        <li><a class="link" href="colyterm.html">Terminos y Condiciones De Uso</a></li>
+        <a href="https://twitter.com/home" target="_blank"><img src="../img/x.png" alt="x(twitter)" class="red">AJ_x</a>
+        <a href="https://www.instagram.com/"target="_blank"><img src="../img/ig.png" alt="instagram" class="red">AJ_ig</a>
+        <a href="https://www.facebook.com/"target="_blank"><img src="../img/fb.png" alt="threads" class="red">AJ_fb</a>
+    </footer>
+</body>
+</html>
