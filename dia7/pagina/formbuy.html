@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Programacion</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../iniciosesion/main.js"></script>
+    <link rel="stylesheet" href="../css/compra.css">
+</head>
+<div class="no-opt">
+    Esta pagina solo está <br> optimizada para computadora <br>
+    <a href="../../">Volver</a>
+
+</div>
+<body>
+    <header id="header">
+        <nav>
+            <h1><a href="inicio.html">Cursos ASG de CT</a></h1>
+            <nav>
+                <ul class="menu">
+                    <li id="select"><a href="inicio.html">Inicio</a></li>
+                    <li><a href="pedidos.html">Mis Cursos</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="../../">Volver</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <form id="comprando">
+            <h1>COMPRAR CURSO</h1>
+            <fieldset id="datos">
+                
+                <legend>Datos Personales</legend>
+                <h2>LLENA CORRECTAMENTE LOS DATOS</h2>
+
+                <table>
+                    <tr>
+                        <td><label for="nombreform"   >Nombre / Nombres:</label>                           </td>
+                        <td><input type="text"        placeholder="Nombre"     id="nombreform"    required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="apellidoform" >Apellido Paterno:</label>                           </td>
+                        <td><input type="text"        placeholder="Apellido"   id="apellidoform"  required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="direccionform">Dirección:       </label>                           </td>
+                        <td><input type="text"        placeholder="Dirección"  id="direccionform" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefono"     >Telefono:        </label>                           </td>
+                        <td><input type="text"        placeholder="Telefono"   id="telefonoform"  required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pais">País:</label></td>
+                        <td><select id="pais" name="pais" required>
+                            <option value="MX">México              </option>
+                            <option value="AR">Argentina           </option>
+                            <option value="BO">Bolivia             </option>
+                            <option value="CL">Chile               </option>
+                            <option value="CO">Colombia            </option>
+                            <option value="CR">Costa Rica          </option>
+                            <option value="CU">Cuba                </option>
+                            <option value="DO">República Dominicana</option>
+                            <option value="EC">Ecuador             </option>
+                            <option value="SV">El Salvador         </option>
+                            <option value="GQ">Guinea Ecuatorial   </option>
+                            <option value="GT">Guatemala           </option>
+                            <option value="HN">Honduras            </option>
+                            <option value="NI">Nicaragua           </option>
+                            <option value="PA">Panamá              </option>
+                            <option value="PY">Paraguay            </option>
+                            <option value="PE">Perú                </option>
+                            <option value="ES">España              </option>
+                            <option value="UY">Uruguay             </option>
+                            <option value="VE">Venezuela           </option>
+                        </select></td>
+                    </tr>
+                </table>
+                <br>
+                <br><br>
+
+                <div class="separaciondiv"></div>
+
+                <button type="button" class="botonins" onclick="primerPaso()"
+                >Siguiente</button>
+            </fieldset>
+
+            <fieldset id="producto">
+                <legend>Curso A Comprar:</legend>
+                <h2>SELECCIONA UNO</h2>
+                <div>
+
+                    <label class="checks">
+                        <input type="radio" name="opcion" value="HTML"       id="r1" onclick="prod('pago','producto')">
+                        <img src="../img/html.jfif"       alt="html">
+                    </label>
+                    <label class="checks">
+                        <input type="radio" name="opcion" value="CSS"        id="r2" onclick="prod('pago','producto')">
+                        <img src="../img/css.jfif"        alt="css">
+                    </label>
+                    <label class="checks">
+                        <input type="radio" name="opcion" value="JAVASCRIPT" id="r3" onclick="prod('pago','producto')">
+                        <img src="../img/javascript.jfif" alt="javascript">
+                    </label>
+
+                    <label class="checks">
+                        <input type="radio" name="opcion" value="JAVA"       id="r4" onclick="prod('pago','producto')">
+                        <img src="../img/java.png"        alt="java">
+                    </label>
+
+                    <label class="checks">
+                        <input type="radio" name="opcion" value="PYTHON"     id="r5" onclick="prod('pago','producto')">
+                        <img src="../img/python.jfif"     alt="python">
+                    </label>
+
+                    <label class="checks">
+                        <input type="radio" name="opcion" value="C"          id="r6" onclick="prod('pago','producto')">
+                        <img src="../img/c.jfif"          alt="C">
+                    </label>
+
+                    <div class="separaciondiv"></div>
+
+                    <button type="button" class="botonins boton" onclick="prod('datos','producto')"
+                    >Anterior</button>
+                </div>  
+            </fieldset>
+
+            <fieldset id="pago">
+                <legend>Forma De Pago</legend>
+                <br><br>
+                <div id="botones">
+                    <button type="button" class="botonins" onclick="prod('tarjeta','deposito'); confirmar()"
+                    >Tarjeta</button>
+                    
+                    <button type="button" class="botonins" onclick="prod('deposito','tarjeta');"
+                    >Deposito</button>
+                </div>
+                <div id="tarjeta">
+                    <label for="target">Ingresa Tu Tarjeta:</label><input type="text" id="target" class="inp"><br>
+                    <label for="cv">CV:</label><input type="text" id="cv" style="width: 10%;">
+                    <label><input type="checkbox">ACEPTAR PAGO</label>
+                </div>
+                <div id="deposito">
+                    <label>Deposita A Esta Tarjeta:</label><input type="text" disabled class="inp" id="dep" value="1234 5647 2108 2254">
+                </div>
+
+                <div class="separaciondiv"></div>
+
+                <button type="button" class="botonins boton"  onclick="prod('producto','pago')"
+                >Anterior</button>
+
+                <button type="button" class="botonins boton2" onclick="prod('semiterminado','pago');confirmar()"
+                >Terminar</button>
+            </fieldset>
+
+            <fieldset id="semiterminado">
+                <legend id="titule">CASI ES TUYO</legend>
+                <h2 id="confirmarsi">Confirma La Información Ingresada</h2>
+                <label for="nombreterm"   >Nombre y apellido:</label>    <input type="text" id="nombreterm"     class="inp" disabled>                     <br>
+                <label for="direccionterm">Direccion:</label>            <input type="text" id="direccionterm"  class="inp" disabled>                     <br>
+                <label for="telefonoterm" >Telefono:</label>             <input type="text" id="telefonoterm"   class="inp" disabled>                     <br>
+                <label for="paisterm"     >País:</label>                 <input type="text" id="paisterm"                   disabled style="width: 10%;">
+                <label for="cursoterm"    >Curso A Comprar:</label>      <input type="text" id="cursoterm"                  disabled style="width: 30%;" ><br>
+                <label for="tarj"         >Tarjeta:</label>              <input type="text" id="tarj"           class="inp" disabled>                     <br>
+                <label for="cvterm"       >CV:</label>                   <input type="text" id="cvterm"         class="inp" disabled style="width: 10%;"> <br>
+                
+                <p id="precio"></p>
+                
+                <div class="separaciondiv"></div>
+                
+                <button type="button" class="botonins boton" onclick="prod('pago','semiterminado')" id="anterior"
+                >Anterior</button>
+                <button type="button"  id="comprandoboton" class="botonins boton2" onclick="comprado()"
+                >Comprar</button>
+                <h1 id="h">COMPRADO</h1>
+                <p id="compra"></p>
+            </fieldset>
+            <br><br>
+        </form>
+        <button onclick="window.location.replace('../pagina/inicio.html')"  class="botonins" id="cancelar"
+        >Cancelar</button>
+        <br><br>
+    </main>
+    <footer>
+        <address>
+            <br>
+            Abraham_ctm en todas las redes.. <br>
+            Cursos gratuitos de programacion. <br>
+            Compañia ASG de CT. <br>
+        </address>
+        <a href="https://www.facebook.com/a.b.r.a.h.a.m.ctm.0/" id="visita"><img src="../iniciosesion/assets/google-icon.svg" class="user" alt="google">Visitanos</a>
+    </footer>
+</body>
+</html>

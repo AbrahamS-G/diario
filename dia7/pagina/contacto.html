@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Programacion</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../iniciosesion/main.js"></script>
+    <style>
+        main{
+            height: 750px;
+        }
+    </style>
+</head>
+<div class="no-opt">
+    Esta pagina solo está <br> optimizada para computadora <br>
+    <a href="../../">Volver</a>
+
+</div>
+<body>
+    <header>
+        <nav>
+            <h1><a href="inicio.html">Cursos ASG de CT</a></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="pedidos.html">Mis Cursos</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li id="select"><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="../../">Volver</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <br><br>
+        <form id="contacto">
+            <fieldset>
+                <legend>Contactanos</legend>
+                <input type="text" maxlength="20" placeholder="Asunto" id="asunto" required>
+                <input type="email" maxlength="40" placeholder="Correo" id="correo" required><br>
+                <input type="text" maxlength="40" placeholder="Nombre/s" id="nombre" required>
+                <input type="text" maxlength="20" placeholder="Apellido" id="apellido" required><br>
+                <textarea cols="75" rows="20" id="textogrande" placeholder="Escribe aqui tu mensaje"></textarea><br>
+                <input type="checkbox" id="check" required><label for="check"> Acepto Terminos y Condiciones de uso</label> <br>
+                <button type="button" class="botonins" onclick="enviarWhatsApp()">Enviar WhatsApp</button>
+            </fieldset>
+        </form>
+        <br><br>
+    </main>
+    <footer>
+        <address>
+            <br>
+            Abraham_ctm en todas las redes.. <br>
+            Cursos gratuitos de programacion. <br>
+            Compañia ASG de CT. <br>
+        </address>
+        <a href="#"><img src="../iniciosesion/assets/google-icon.svg" class="user" alt="google">Visitanos</a>
+    </footer>
+</body>
+</html>
