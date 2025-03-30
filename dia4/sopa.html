@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="abraham" content="salazar garrido 4B">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="no-opt">
+    Esta pagina solo está <br> optimizada para computadora <br>
+    <a href="../">Volver</a>
+</div>
+<style>
+    .no-opt{
+    display: none;
+}
+@media (max-width:450px) {
+    .no-opt{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1000%;
+        height: 100%;
+        z-index: 1000;
+        color: white;
+        background-color: #46a15a;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="img/headerr.png" alt="titulos">
+        <h6>
+            <label>
+                Subsecretaria de Educación Media Superior <br>
+                Dirección General de Educación Tecnológica Industrial y Servicios <br>
+                Oficina Estatal de la DGETI en la Ciudad de México <br>
+                Centro de Estudios Tecnológicos, Industrial y de Servicios No. 42
+            </label>
+        </h6>
+            <div class="contenedor2">
+                <table id="cosas">
+                    <caption>Actividad integradora</caption>
+                    <tr>
+                        <th colspan="2">ASIGNATURA/SUB MODULO</th>
+                        <td colspan="2">Sub-Módulos 3 APP con el servidor</td>
+                        <th>ACADEMIA</th>
+                        <td>Programación</td>
+                    </tr>
+                    <tr>
+                        <th>SEMESTRE</th>
+                        <td colspan="2" id="grado">6°</td>
+                        <th>ELABORADO POR:</th>
+                        <td colspan="2">ABRAHAM SALAZAR GARRIDO</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </nav>
+        <h1>SOPA DE LETRAS 2</h1>
+
+    </header>
+    <main>
+        <section id="sopadeletras">
+            <div class="contenedor">
+                <table id="sopa">
+                    <tr>
+                        <td><button>T</button></td>
+                        <td><button>A</button></td>
+                        <td><button>D</button></td>
+                        <td><button>N</button></td>
+                        <td><button onclick="web(1)" id="web1" value="true">W</button></td>
+                        <td><button>P</button></td>
+                        <td><button>A</button></td>
+                        <td><button>S</button></td>
+                        <td><button>V</button></td>
+                        <td><button>N</button></td>
+                        <td><button>T</button></td>
+                        <td><button>R</button></td>
+                        <td><button>P</button></td>
+                        <td><button>Y</button></td>
+                        <td><button>A</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>N</button></td>
+                        <td><button>D</button></td>
+                        <td><button>P</button></td>
+                        <td><button>V</button></td>
+                        <td><button onclick="web(2)" id="web2" value="false">E</button></td> <!-- Web E-->
+                        <td><button>E</button></td>
+                        <td><button onclick="js(11)" id="js11" value="true">J</button></td>
+                        <td><button onclick="php(1)" id="php1" value="true">P</button></td>
+                        <td><button>H</button></td>
+                        <td><button>Y</button></td>
+                        <td><button>C</button></td>
+                        <td><button>R</button></td>
+                        <td><button>N</button></td>
+                        <td><button>N</button></td>
+                        <td><button>A</button></td>                               
+                    </tr>
+                    <tr>
+                        <td><button>E</button></td>
+                        <td><button>R</button></td>
+                        <td><button>M</button></td>
+                        <td><button>L</button></td>
+                        <td><button onclick="web(3)" id="web3" value="true">B</button></td>
+                        <td><button>S</button></td>
+                        <td><button onclick="php(2)" id="php2" value="false">H</button></td>
+                        <td><button onclick="js(12)" id="js12" value="false">S</button></td>
+                        <td><button onclick="pagina(6)" id="pag6" value="true">A</button></td>
+                        <td><button onclick="js(10)" id="js10" value="true">T</button></td>
+                        <td><button>I</button></td>
+                        <td><button>N</button></td>
+                        <td><button>D</button></td>
+                        <td><button>C</button></td>
+                        <td><button>G</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="asp(1)" id="asp1" value="true">A</button></td> <!-- asp A-->
+                        <td><button>E</button></td>
+                        <td><button>U</button></td>
+                        <td><button>S</button></td>
+                        <td><button>A</button></td>
+                        <td><button onclick="php(3)" id="php3" value="true">P</button></td> <!-- php p2-->
+                        <td><button>I</button></td>
+                        <td><button onclick="pagina(5)" id="pag5" value="false">N</button></td> <!-- pagina N-->
+                        <td><button onclick="js(9)" id="js9" value="true">P</button></td> <!-- jspjs P jsp & js-->
+                        <td><button>T</button></td>
+                        <td><button onclick="lenguaje(8)" id="len8" value="true">E</button></td> <!-- lenguaje-->
+                        <td><button>E</button></td>
+                        <td><button>P</button></td>
+                        <td><button>E</button></td>
+                        <td><button>S</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="asp(2)" id="asp2" value="false">S</button></td> <!-- asp-->
+                        <td><button>B</button></td>
+                        <td><button>B</button></td>
+                        <td><button>B</button></td>
+                        <td><button>L</button></td>
+                        <td><button>A</button></td>
+                        <td><button onclick="pagina(4)" id="pag4" value="false">I</button></td> <!-- pagina I-->
+                        <td><button onclick="js(8)" id="js8" value="false">I</button></td><!-- javascript I-->
+                        <td><button>R</button></td>
+                        <td><button onclick="lenguaje(7)" id="len7" value="false">J</button></td> <!-- lenguaje J-->
+                        <td><button>O</button></td>
+                        <td><button>D</button></td>
+                        <td><button>A</button></td>
+                        <td><button>E</button></td>
+                        <td><button>E</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="asp(3)" id="asp3" value="true">P</button></td>
+                        <td><button>A</button></td>
+                        <td><button>D</button></td>
+                        <td><button>N</button></td>
+                        <td><button onclick="html(4)" id="html4" value="true">L</button></td>
+                        <td><button onclick="pagina(3)" id="pag3" value="false">G</button></td>
+                        <td><button onclick="js(7)" id="js7" value="false">R</button></td>
+                        <td><button>A</button></td>
+                        <td><button onclick="lenguaje(6)" id="len6" value="false">A</button></td>
+                        <td><button>D</button></td>
+                        <td><button>C</button></td>
+                        <td><button>O</button></td>
+                        <td><button>I</button></td>
+                        <td><button>A</button></td>
+                        <td><button>M</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>R</button></td>
+                        <td><button>L</button></td>
+                        <td><button>A</button></td>
+                        <td><button onclick="html(3)" id="html3" value="false">M</button></td>
+                        <td><button onclick="pagina(2)" id="pag2" value="false">A</button></td>
+                        <td><button onclick="js(6)" id="js6" value="false">C</button></td>
+                        <td><button>R</button></td>
+                        <td><button onclick="lenguaje(5)" id="len5" value="false">U</button></td>
+                        <td><button>V</button></td>
+                        <td><button>U</button></td>
+                        <td><button>E</button></td>
+                        <td><button onclick="aspnet(1)" id="net1" value="true">A</button></td>
+                        <td><button>T</button></td>
+                        <td><button>N</button></td>
+                        <td><button>E</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>N</button></td>
+                        <td><button>W</button></td>
+                        <td><button onclick="html(2)"  id="html2" value="false">T</button></td>
+                        <td><button onclick="pagina(1)" id="pag1" value="true">P</button></td>
+                        <td><button onclick="js(5)" id="js5" value="false">S</button></td>
+                        <td><button>L</button></td>
+                        <td><button onclick="lenguaje(4)" id="len4" value="false">G</button></td>
+                        <td><button>Y</button></td>
+                        <td><button>T</button></td>
+                        <td><button>Y</button></td>
+                        <td><button>C</button></td>
+                        <td><button onclick="aspnet(2)" id="net2" value="false">S</button></td>
+                        <td><button>P</button></td>
+                        <td><button>O</button></td>
+                        <td><button>I</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>S</button></td>
+                        <td><button onclick="html(1)"  id="html1" value="false">H</button></td>
+                        <td><button>Y</button></td>
+                        <td><button onclick="js(4)" id="js4" value="false">A</button></td>
+                        <td><button>O</button></td>
+                        <td><button onclick="lenguaje(3)" id="len3" value="false">N</button></td>
+                        <td><button>P</button></td>
+                        <td><button>R</button></td>
+                        <td><button>S</button></td>
+                        <td><button>U</button></td>
+                        <td><button>D</button></td>
+                        <td><button onclick="aspnet(3)" id="net3" value="false">P</button></td>
+                        <td><button>B</button></td>
+                        <td><button>L</button></td>
+                        <td><button>R</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>A</button></td>
+                        <td><button>P</button></td>
+                        <td><button onclick="js(3)" id="js3" value="false">V</button></td>
+                        <td><button>B</button></td>
+                        <td><button onclick="lenguaje(2)" id="len2" value="false">E</button></td>
+                        <td><button>S</button></td>
+                        <td><button>A</button></td>
+                        <td><button>N</button></td>
+                        <td><button>I</button></td>
+                        <td><button>T</button></td>
+                        <td><button>O</button></td>
+                        <td><button onclick="aspnet(4)" id="net4" value="false">N</button></td>
+                        <td><button>I</button></td>
+                        <td><button>T</button></td>
+                        <td><button>A</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>U</button></td>
+                        <td><button onclick="js(2)" id="js2" value="false">A</button></td>
+                        <td><button>B</button></td>
+                        <td><button onclick="lenguaje(1)" id="len1" value="true">L</button></td>
+                        <td><button>I</button></td>
+                        <td><button>N</button></td>
+                        <td><button>A</button></td>
+                        <td><button>P</button></td>
+                        <td><button>P</button></td>
+                        <td><button>A</button></td>
+                        <td><button>P</button></td>
+                        <td><button onclick="aspnet(5)" id="net5" value="false">E</button></td>
+                        <td><button>N</button></td>
+                        <td><button>R</button></td>
+                        <td><button>O</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="js(1)" id="js1" value="true">J</button></td>
+                        <td><button>A</button></td>
+                        <td><button>U</button></td>
+                        <td><button>I</button></td>
+                        <td><button onclick="python(1)" id="py1" value="true">P</button></td>
+                        <td><button onclick="python(2)" id="py2" value="false">Y</button></td>
+                        <td><button onclick="python(3)" id="py3" value="false">T</button></td>
+                        <td><button onclick="python(4)" id="py4" value="false">H</button></td>
+                        <td><button onclick="python(5)" id="py5" value="false">O</button></td>
+                        <td><button onclick="python(6)" id="py6" value="true">N</button></td>
+                        <td><button>E</button></td>
+                        <td><button onclick="aspnet(6)" id="net6" value="true">T</button></td>
+                        <td><button>U</button></td>
+                        <td><button>L</button></td>
+                        <td><button>O</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>J</button></td>
+                        <td><button>L</button></td>
+                        <td><button>A</button></td>
+                        <td><button>P</button></td>
+                        <td><button>N</button></td>
+                        <td><button>E</button></td>
+                        <td><button>H</button></td>
+                        <td><button>L</button></td>
+                        <td><button>A</button></td>
+                        <td><button>A</button></td>
+                        <td><button>I</button></td>
+                        <td><button>S</button></td>
+                        <td><button>S</button></td>
+                        <td><button>S</button></td>
+                        <td><button>A</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>A</button></td>
+                        <td><button>V</button></td>
+                        <td><button>Y</button></td>
+                        <td><button>P</button></td>
+                        <td><button>O</button></td>
+                        <td><button onclick="ruby(1)" id="ruby1" value="true">R</button></td>
+                        <td><button onclick="ruby(2)" id="ruby2" value="false">U</button></td>
+                        <td><button onclick="ruby(3)" id="ruby3" value="false">B</button></td>
+                        <td><button onclick="ruby(4)" id="ruby4" value="true">Y</button></td>
+                        <td><button>P</button></td>
+                        <td><button>U</button></td>
+                        <td><button>I</button></td>
+                        <td><button>D</button></td>
+                        <td><button>A</button></td>
+                        <td><button>A</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>D</button></td>
+                        <td><button>D</button></td>
+                        <td><button>H</button></td>
+                        <td><button>P</button></td>
+                        <td><button>E</button></td>
+                        <td><button>A</button></td>
+                        <td><button>E</button></td>
+                        <td><button>O</button></td>
+                        <td><button>I</button></td>
+                        <td><button>H</button></td>
+                        <td><button>V</button></td>
+                        <td><button>U</button></td>
+                        <td><button>E</button></td>
+                        <td><button>N</button></td>
+                        <td><button>G</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="palabras">
+            <h3>Palabras a encontrar</h3>
+
+            <div class="separador">.</div>
+
+        <div class="listas">
+            <div class="primero">
+                <ol>
+                    <li><label id="leny">LENGUAJE</label></li>
+                    <li><label id="pagy">PAGINA</label></li>
+                    <li><label id="weby">WEB</label></li>
+                    <li><label id="pyy">PYTHON</label></li>
+                </ol>
+            </div>
+
+            <div class="segundo">
+                <ol>
+                    <li><label id="aspy">ASP</label></li>
+                    <li><label id="aspnet">ASPNET</label></li>
+                    <li><label id="htmly">HTML</label></li>
+                    <li><label id="rubyy">RUBY</label></li>
+                </ol>
+            </div>
+
+            <div class="tercero">
+                <ol>
+                    <li><label id="javascript">JAVASCRIPT</label></li>
+                    <li><label id="jsp">JSP</label></li>
+                    <li><label id="phpy">PHP</label></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    
+</main>
+<footer>
+    <a href="../" style="color: white;">Volver</a>
+    <address>
+            @abraham_ctm en todas las redes <br>
+            abraham.sg@cetis42.edu.mx <br>
+            </div>
+        </address>
+    </footer>
+</body>
+</html>
