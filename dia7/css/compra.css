@@ -1,0 +1,78 @@
+#comprando{
+    margin: auto;
+    width: 75%;
+}
+fieldset{
+    background-color: rgb(49, 49, 168);
+    border-radius: 20px;
+}
+#datos table{
+    text-align: center;
+    margin: auto;
+}
+#producto img{
+    width: 300px;
+}
+#pago,#tarjeta,#deposito,#semiterminado,#producto,#h{
+    display: none;
+}
+#seg{
+    width: 30%;
+    float: right;
+}
+label{
+    font-size: 18px;
+}
+input,select{
+    padding: 5px;
+    width: 100%;
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+}
+.separaciondiv{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+.checks input[type="radio"] {
+    display: none;
+}
+.checks img {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+#botonins{
+    background-color: rgb(58, 27, 109);
+}
+.botonins{
+    background-color: rgb(59, 138, 158);
+    border-radius: 18px;
+}
+.inp{
+    width: 40%;
+}
+legend{
+    background-color: pink;
+    padding: 5px;
+    font-size: 19px;
+}
+.checks:hover {
+    opacity: 0.5;
+    position: relative;
+}
+input:disabled{
+    color: black;
+    background-color: rgb(238, 231, 231);
+}
+p{
+    font-size: large;
+}
+.boton{
+    background-color: rgb(194, 10, 10);
+}
+.boton2{
+    background-color: rgb(56, 155, 56);
+}

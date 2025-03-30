@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(117, 117, 179);
+    text-align: center;
+    color: white;
+    font-family:sans-serif;
+}
+.no-opt{
+    display: none;
+}
+@media (max-width:450px) {
+    .no-opt{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1000%;
+        height: 100%;
+        z-index: 1000;
+        background-color: #46a15a;
+        color: white;
+    }
+}
+
+main{
+    min-height: calc(100vh - 120px);
+}
+header{
+    text-align: left;
+    width: 100%;
+    background-color: rgb(80, 80, 134);
+    height: 100px;
+    margin-top: -20px;
+}
+.menu{
+    margin-right: 150px;
+    padding: 10px;
+    display: inline-flex;
+    float: inline-end;
+    margin-top: -44px;
+}
+.menu li{
+    list-style: none;
+    padding: 10px;
+}
+.menu li:hover{
+    background-color: rgb(72, 72, 97);
+    transition: all 0.5s;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+a:hover{
+    transition: all 0.5s;
+    color: wheat;
+}
+footer{
+    border-top: 1px solid rgb(68, 68, 114);
+    width: 100%;
+    background-color: rgb(80, 80, 134);
+    height: 119px;
+    position: relative;
+    bottom: 0;
+}
+.curso{
+    width: 33.3333%;
+    background-color: rgb(90, 90, 147);
+    border-radius: 20px;
+    margin: 10px;
+    border: 1px solid violet;
+}
+.curso:hover{
+    transform: scale(1.03);
+}
+.cursos1,.cursos2{
+    display: flex;
+}
+.curso img{
+    border: 1px solid rgb(119, 22, 22);
+}
+.botonins{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(194, 121, 187);
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    width: 300px;
+    border: 1px solid rgb(219, 206, 206);
+}
+.user{
+    width: 20px;
+}
+button:hover{
+    transition: all 0.5s;
+    transform: scale(1.05);
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+button:active{
+    transform: scale(1);
+}
+#cerrar{
+    float: right;
+    margin-top: -25px;
+}
+#proyectos{
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+}
+#proyectos td{
+    width: 32.3333%;
+    background-color: rgb(90, 90, 147);
+    height: 200px;
+    border: 1px solid white;
+    border-left: 2px solid white;
+    
+    
+}
+#proyectos td a{
+    padding: 85px;
+}
+#proyectos td:hover{
+    background-color: rgb(69, 69, 138);
+    
+}
+#proyectos tr{
+    height: 200px;
+    border-radius: 20px;
+    margin: 100px;
+
+}
+#contacto fieldset{
+    width: 45%;
+    margin: auto;
+    background-color: rgb(59, 59, 102);
+    border-radius: 20px;
+}
+#contacto legend{
+    background-color: rgb(59, 59, 102);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    font-size: 25px;
+}
+#contacto textarea {
+    resize: none;
+    width: 60%;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(212, 217, 223);
+
+}
+#contacto fieldset input{
+    background-color: rgb(215, 220, 224);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#select{
+    background-color: rgb(72, 72, 97);
+}
+.blog{
+    width: 65%;
+    text-align: left;
+    background-color: rgb(72, 72, 97);
+    margin: auto;
+    border-radius: 10px;
+}
+h4{
+    color: wheat;
+    font-size: 105%;
+}
