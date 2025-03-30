@@ -1,0 +1,116 @@
+body{
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    
+    font-size: 35px;
+}
+caption{
+    font-size: 30px;
+    margin-top: 55px;
+}
+#cosas,th,td{
+    border: 1px solid black;
+    cursor: default;
+}
+#cosas{
+    justify-content: center;
+    text-align: center;
+}
+#grado{
+    width: 150px;
+}
+#sopa{
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+td{
+    width: 35px;
+    height: 35px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+}
+.separador{
+    width: 50%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    color: white;
+}
+.listas{
+    width: 50%;
+    margin-left: 17.5%;
+    display: inline-flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+ol{
+    margin-left: 175px;
+}
+li{
+    margin-top: 5px;
+}
+
+h6{
+    float: right;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 9px;
+}
+img{
+    margin-top: 5px;
+}
+.contenedor2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+footer{
+    margin-top: 5%;
+    width: 100%;
+    background-color: rgb(137, 55, 55);
+    color: white;
+    text-align: center;
+}
+.redesl{
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.x{
+    margin-top: -6px;
+    width: 47px;
+    height: 47px;
+}
+#red{
+    margin-top: -50px;
+}
+button{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+button:focus{
+    background-color: peru;
+}
