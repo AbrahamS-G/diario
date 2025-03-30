@@ -1,1 +1,43 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="../main.js"></script>
+    <style>
+        body{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li>Nopales</li>
+            <li>Tunas</li>
+            <li>Cuidados</li>
+            <li>Favoritos</li>
+            <li>Busqueda</li>
+            <li>Ajustes</li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <a href="../"><img src="../logoab.png" alt=""></a>
+        <button onclick="location.href='./paginas/favoritos.html';">❤️</button>
+    </header>
+<body>
+    ❤️<br>
+    Aún no tienes favoritos
+</body>
+</html>
+
