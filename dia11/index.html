@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraham SG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<div class="no-opt">
+    Esta pagina solo está <br> optimizada para computadora <br>
+    <a href="../">Volver</a>
+</div>
+<style>
+    .no-opt{
+        display: none;
+    }
+    @media (max-width:450px) {
+    .no-opt{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 1000%;
+        height: 100%;
+        z-index: 1000;
+        color: white;
+        background-color: #46a15a;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="inicio"><a onclick="cambiar('index','inicio')">Inicio</a></li>
+                <li id="misproyectos"><a>Mis proyectos</a></li>
+                <li id="contactame"><a>Contactame</a></li>
+                <li id="galeria"><a>Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="index">
+            <div class="right-up">
+                <h2>Si Lo Puedes Imaginar, <br>Lo Puedes Programar</h2>
+                <i><b>-</b>Programación ATS<b>.</b></i><br>
+                <p><b>E</b>sta frase me inspiró a adentrarme a un mundo basto y finito. <br><br>
+                <b>S</b>iendo la programación mi pasatiempo principal. <br>
+                <b>A</b>unque mi computadora no es muy potente, me ha dado la posibilidad de iniciar en el diseño web y gestión de bases de datos</p>
+            </div>
+            
+            <div class="text-article">
+                <h1>Hola, soy <b>Abraham Salazar</b>.</h1>
+                <h3><b>Sobre Mí.</b></h3>
+                <p>Soy un apasionado de la programación y la creación de bases de datos. Aunque todavía estoy en proceso de mejorar mis habilidades, estoy siempre dispuesto a aprender y a perfeccionar mi lógica de programación. 
+                    Mi objetivo es crecer continuamente en este campo y aportar soluciones eficientes y creativas.</p>
+            </div>
+            <div class="text-article" style="width: 97%;">
+                <h3><b>Hobbies</b></h3>
+                <p>Mis principales hobbies son:</p>
+                <div class="hobbies">
+                    <div class="hobbies-items">
+                        <img src="img/hobbies/bike.ico" alt="bike">
+                        <b>Ciclismo</b>
+                    </div>
+                    <div class="hobbies-items">
+                        <img src="img/hobbies/programing.ico" alt="programing">
+                        <b>Programar</b>
+                    </div>
+                    <div class="hobbies-items">
+                        <img src="img/hobbies/movies.ico" alt="movies">
+                        <b>Ver peliculas</b>
+                    </div>
+                    <div class="hobbies-items">
+                        <img src="img/hobbies/controller.ico" alt="games">
+                        <b>VideoJuegos</b>
+                    </div>
+                </div>
+            </div>
+            <div class="text-article skills" style="width: 97%;">
+                <h3><b>Skills</b></h3>
+                <p>Lo que he aprendido:</p>
+                <div class="hobbies">
+                    <div class="hobbies-items">
+                        <img src="img/skills/python.ico" alt="python">
+                        <b>Python</b>
+                    </div>
+                    <div class="hobbies-items">
+                        <img src="img/skills/js.ico" alt="javascript">
+                        <b>JavaScript</b>
+                    </div>
+                    <div class="hobbies-items">
+                        <img src="img/skills/html.ico" alt="html">
+                        <b>HTML5</b>
+                    </div>
+                    <div class="hobbies-items">
+                        <img src="img/skills/css.ico" alt="css">
+                        <b>CSS</b>
+                    </div>
+                    <div class="hobbies-items">
+                        <img src="img/skills/databases.ico" alt="databases">
+                        <b>Bases De Datos</b>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <section class="left">
+            <img src="img/perfil.png" alt="foto" id="perfil">
+            <h1 class="name">Abraham S.G.</h1>
+            <div class="redes1">
+                <h3>Sigueme En Mis Redes:</h3>
+                <a href="https://www.instagram.com/abraham_ctm/" target="_blank"><img src="img/ig.ico" alt="redes" class="red"></a>
+                <a href="https://www.facebook.com/a.b.r.a.h.a.m.ctm.0/" target="_blank"><img src="img/fb.ico" alt="fb" class="red"></a>
+            </div>
+            <div class="main-container">
+                <h3>¡Hola!, soy abraham y estoy estudiando</h3>
+            </div>
+            <div class="button-container">
+                <button class="descarga"><div class="text-cv">Descargar C.V</div></button>
+            </div>
+        </section>
+        <button class="descarga horario" id="hour"> Horario </button>
+        <a href="../">Volver</a>
+    </main>
+    <footer>
+        <address>
+            &copy;2025 <br>
+            ABRAHAM SG
+        </address>
+    </footer>
+</body>
+</html>
