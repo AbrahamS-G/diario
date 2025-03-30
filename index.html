@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Diario Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<div class="entrada bloqueo">
+    Soy Abraham 🙋‍♂️ <br> Y esto es lo que me gusta. <br>
+    <div class="">
+        Quedan <span id="segundosRestantes">4</span> segundos...
+    </div>
+</div>
+<style>
+    .entrada{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #8bd099;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        text-align: center;
+        z-index: 99999;
+
+    }
+</style>
+<script>
+        let tiempoRestante = 0;
+        
+        const actualizarContador = () => {
+            document.querySelector('#segundosRestantes').textContent = tiempoRestante;
+            tiempoRestante--;
+            if (tiempoRestante < 0) {
+                document.querySelector('.bloqueo').style.display = 'none';
+            }
+        };
+
+        const intervalo = setInterval(actualizarContador, 1000);
+</script>
+<body>
+    <header>
+        <a href="./index.html"><h1>Mi Diario Personal</h1></a><h4>17 - 03 - 2025 <i>A</i> 28 - 03 - 2025</h4>
+    </header>
+    <main>
+        <article>
+            <b>¡Hola!</b>, Este es el inicio de mi diario personal, tomando en cuenta, esta pagina será el día 1. 
+            <br>Empezaré explicando las paginas para que sea entendible su funcionamiento siguiendo los siguientes pasos.
+            <ol>
+                <li>
+                    Algunas páginas no están optimizadas para ejecutarse en un teléfono.
+                    <ul>
+                        <li>Si este es el caso, la página estará marcada con una etiqueta roja que indicará que no está optimizada para telefonos.</li>
+                        <li>Si la página está optimizada para cualquier dispositivo, se indicará con una etiqueta verde.</li>
+                        <li><b>Algunas páginas solo estarán disponibles para computadoras, por lo que bloquearé el acceso desde teléfonos para evitar problemas de rendimiento y visualización.</b></li>
+                    </ul>
+                </li>
+                <li>Dado que este es el menú principal, estará optimizado tanto para computadoras como para teléfonos.</li>
+                <li>Todas las páginas utilizadas en este diario son creaciones propias y fueron desarrolladas sin ayuda externa. Siguen el proceso de mejora que he llevado a lo largo de mi carrera.</li>
+                <li>Cualquier sugerencia es bien recibida poniendose en contacto conmigo a travez de mi <a href="https://wa.me/+525574695720" target="_blank">WhatsApp</a>.</li>
+            </ol>
+        </article>
+        <div class="separador"></div>
+        <article class="dias">
+            <div class="dia">
+                <div class="label opt">Optimizada</div>
+                <button class="title" onclick="Ir('./dia2/')">Slider Manual</button>
+                <b>Día 2</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Esta página es un slider manual, tiene que darle click a los botones para cambiar de imagen.</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label opt">Optimizada</div>
+                <button class="title" onclick="Ir('./dia3/')">Slider Automatico</button>
+                <b>Día 3</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>No tiene que hacer nada, solo espere.</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label no-opt">Optimizada</div>
+                <button class="title" onclick="Ir('./dia4/sopa.html')">Sopa de letras</button>
+                <b>Día 4</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>una sopa de letras sobre lenguajes de programación</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label no-opt">No Optimizada</div>
+                <button class="title" onclick="Ir('./dia5/')">Tienda Salazar</button>
+                <b>Día 5</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Un catalogo, que tendrá que pulsar los botones para ver el CODIGO del producto he ingresarlo en la parte superior</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label opt">Optimizada</div>
+                <button class="title" onclick="Ir('./dia6/')">Galeria</button>
+                <b>Día 6</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Una linda galeria con tonos azules optimizada para una mejor vista <br> (NO ENTRAR CON DATOS, MUCHAS IMAGENES)</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label no-opt">No Optimizada</div>
+                <button class="title" onclick="Ir('./dia7/pagina/inicio.html')">Cursos ASG</button>
+                <b>Día 7</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Una linda galeria con tonos azules optimizada para una mejor vista <br> (NO ENTRAR CON DATOS, MUCHAS IMAGENES)</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label no-opt">No Optimizada</div>
+                <button class="title" onclick="Ir('./dia8/pag/')">Tienda De Electronicos</button>
+                <b>Día 8</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Una tienda creada para vender electronicos</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label opt">Optimizada</div>
+                <button class="title" onclick="Ir('./dia9/')">Nopales</button>
+                <b>Día 9</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Un sitio de información importante de los nopales</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label opt">Optimizada</div>
+                <button class="title" onclick="Ir('./dia10/')">Noticias nopales</button>
+                <b>Día 10</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Una pequeña página boceto de una aplicación de noticias movil</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label no-opt">No Optimizada</div>
+                <button class="title" onclick="Ir('./dia11/')">Portfolio 1</button>
+                <b>Día 11</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Un portfolio donde muestro mis habilidades</p>
+                    </details>
+                </div>
+            </div>
+            <div class="dia">
+                <div class="label opt">Optimizada</div>
+                <button class="title" onclick="Ir('./dia12/')">Portfolio Principal</button>
+                <b>Día 12</b>
+                <div class="info">
+                    <details>
+                        <summary>Detalles</summary>
+                        <p>Un bello y agradable diseño sobre mi pasión</p>
+                    </details>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <address><strong>&copy;2025 - @abrahamm_sg</strong></address>
+    </footer>
+</body>
+</html>
